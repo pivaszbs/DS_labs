@@ -1,0 +1,10 @@
+python client.py meme.jpg localhost 8800
+python client.py meme.jpg localhost 8800
+python client.py meme.jpg localhost 8800
+python client.py meme.jpg localhost 8800
+python client.py meme.jpg localhost 8800
+python client.py mamkin_shutnik.txt localhost 8800
+python client.py mamkin_shutnik.txt localhost 8800
+python client.py mamkin_shutnik.txt localhost 8800
+python client.py mamkin_shutnik.txt localhost 8800
+python client.py mamkin_shutnik.txt localhost 8800

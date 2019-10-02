@@ -13,10 +13,12 @@ class ClientListener(Thread):
     def create_file(self, filename):
         if os.path.isfile(filename):
             i = 1
-            new_filename = filename + "(" + str(i) + ")"
+            index = filename.rfind('.')
+            new_filename = filename[:index] + "(" + str(i) + ")" + filename[index:]
             while os.path.isfile(new_filename):
                 i+=1
-                new_filename = filename + "(" + str(i) + ")"
+                index = filename.rfind('.')
+                new_filename = filename[:index] + "(" + str(i) + ")" + filename[index:]
             filename = new_filename
         f = open(filename, 'wb')
         return f
