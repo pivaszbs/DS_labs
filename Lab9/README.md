@@ -3,7 +3,8 @@
 <details>
   <summary>rs.config()</summary>
   
-    ```{
+    ```
+    {
         "_id" : "rs0",
         "version" : 1,
         "protocolVersion" : NumberLong(1),
@@ -65,7 +66,8 @@
             },
             "replicaSetId" : ObjectId("5dbc4c46e5cb0c5204ac5bf4")
         }
-    }```
+    }
+    ```
   
 </details>
 <details>
