@@ -24,10 +24,12 @@ class ClientListener(Thread):
         return f
 
     def recv_msg(self):
+        #recv size of filename
         raw_msglen = self.recvall(4)
         if not raw_msglen:
             return None
         msglen = struct.unpack('>I', raw_msglen)[0]
+        #recv filename
         filename = self.recvall(msglen).decode()
         f = self.create_file(filename)
         raw_msglen = self.recvall(4)
@@ -35,6 +37,8 @@ class ClientListener(Thread):
             return None
         msglen = struct.unpack('>I', raw_msglen)[0]
         reclen = 0
+
+        #recv file by chunks
         while reclen < msglen:
             f.write(self.recvall(1024))
             reclen += 1024
