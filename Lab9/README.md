@@ -3,7 +3,7 @@
 <details>
   <summary>rs.config()</summary>
   
-    ```{
+    {
         "_id" : "rs0",
         "version" : 1,
         "protocolVersion" : NumberLong(1),
@@ -65,13 +65,13 @@
             },
             "replicaSetId" : ObjectId("5dbc4c46e5cb0c5204ac5bf4")
         }
-    }```
+    }
   
 </details>
 <details>
     <summary>rs.status()</summary>
 
-    ```{
+    {
         "set" : "rs0",
         "date" : ISODate("2019-11-01T15:53:12.747Z"),
         "myState" : 1,
@@ -215,13 +215,13 @@
             }
         },
         "operationTime" : Timestamp(1572623585, 1)
-    }```
+    }
 </details>
 
 <details>
     <summary>rs.config()</summary>
 
-```    {
+    {
         "_id" : "rs0",
         "version" : 1,
         "protocolVersion" : NumberLong(1),
@@ -283,12 +283,12 @@
             },
             "replicaSetId" : ObjectId("5dbc4c46e5cb0c5204ac5bf4")
         }
-    }```
+    }
 </details>
 
 <details>
 <summary>rs.status()</summary>
-```    {
+    {
         "set" : "rs0",
         "date" : ISODate("2019-11-01T16:08:25.430Z"),
         "myState" : 2,
@@ -413,5 +413,5 @@
             }
         },
         "operationTime" : Timestamp(1572624495, 1)
-    }```
+    }
 </details>
